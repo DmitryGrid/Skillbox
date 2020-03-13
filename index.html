@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="favicon.png">
+
+    <title>Training With Advantages</title>
+</head>
+
+<body>
+    <section class="training" id="training">
+        <h1 class="training__title text-center">Стоимость обучения</h1>
+        <div class="training__box container text-center textWhite">
+            <!-- leftFramework -->
+            <div class="training__label bgBlue">
+                <p class="label__discount">
+                    <span class="discount__info">Скидка</span>
+                    <span class="discount__value">40 %</span>
+                    <span class="discount__firstTwenty">первым 20</span>
+                    <svg class="sale" id="sale" width="110" height="119" viewBox="0 0 110 119" fill="none">                   
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.808594H110V105.084L55 119.809L0 105.084V0.808594Z" fill="black"/>
+                    </svg>
+                </p>
+                <p class="discount__oldPrice">Полная cтоимость курса
+                    <span class="oldPrice__value">50 000 <span class="rub" aria-label=""></span></span>
+                </p>
+                <p class="discount__priceMonth">
+                    <span class="priceMonth__value">2 900 <span class="rub" aria-label=""></span></span>
+                    Рассрочка без первого взноса
+                </p>
+                <p class="discount__newPrice">
+                    <span class="newPrice__value">29 000 <span class="rub" aria-label=""></span></span>
+                    Первым 20-ти
+                </p>
+
+            </div>
+            <!-- rightFramework -->
+            <section class="training__reg">
+                <header class="reg__header">
+                    <h3 class="reg__title">Запишитесь на курс</h3>
+                    <p class="reg__desc textGrey">
+                        Старт курса:&nbsp;
+                        <b class="desc-value textBlue">7 сентября</b>
+                    </p>
+                    <p class="reg__desc textGrey">
+                        Осталось:&nbsp;
+                        <b class="desc-value textBlue">19 мест</b>
+                    </p>
+                </header>
+                <form action="" class="trainingSign" id="trainingSign">
+                    <input class="trainingSign__field textGrey" name="name" type="text" placeholder="Имя" aria-label="Имя" pattern="^[\sA-Za-zА-Яа-яЁё]{2,}$" required="">
+                    <input class="trainingSign__field textGrey" name="phone" type="tel" placeholder="Телефон" aria-label="Телефон" pattern="^[0-9(\-+)\s]+$" required="">
+                    <input class="trainingSign__field textGrey" name="email" type="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" aria-label="Email" required="">
+                    <button class="trainingSign__button" type="submit">Записаться</button>
+
+                    <label for="USER_REMEMBER" class="personalData custom-control custom-checkbox">
+
+                        <input type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y" class="custom-control-input form-control">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">
+                            Я согласен с условиями обработки <a class="personalData-link" href="https://skillbox.ru/privacy_policy.pdf/" target="_blank" rel="noopener">персональных данных</a>
+                        </span>
+
+                    </label>
+                </form>
+
+
+
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>
